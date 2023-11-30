@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hello my name id rakib </h1>
+    <h2>{{name}}</h2>
+    <h2>{{id}}</h2>
+    <h2>{{department}}</h2>
+    <h2>{{lst}}</h2>
+    <!-- Add -->
+    <h2>{{20 | add:"5"}}</h2>
+    <h2>{{'django' | capfirst}}</h2>
+    <!-- cut -->
+    <h2>{{name | cut:"l"}}</h2>
+    <!-- date -->
+    <h2>{{birthday| date:"D d M Y"}}</h2>
+    <!-- default -->
+    <h2>{{empty | default:"Empty value here"}}</h2>
+    <h2>{{"" | default:"Empty here"}}</h2>
+    <!-- divisibleby -->
+    <h2>{{23 | divisibleby:"3"}}</h2>
+    <h2>{{ 30 | divisibleby:"3"}}</h2>
+    <!-- dicsort -->
+    <h2>{{ dict | dictsort:"age"}}</h2>
+    <h2>{{ dict | dictsort:"name"}}</h2>
+    <!-- filesize -->
+    <h2>{{'3642178' | filesizeformat}}</h2>
+    <h2>{{'9753862' | filesizeformat}}</h2>
+    <h2>{{'7569325' | filesizeformat}}</h2>
+   <!-- first -->
+   <h2>{{lit | first}}</h2>    
+   <h2>{{ lt | first}}</h2>
+    <!-- last -->
+    <h2>{{lit | last}}</h2> 
+    <h2>{{lt | last}}</h2> 
+    <!-- join -->
+    <h2>{{lsit | join:"-"}}</h2> 
+    <h2>{{lsit | join:"+"}}</h2> 
+    <h2>{{lsit | join:"///"}}</h2> 
+    <!-- length -->
+    <h2>{{lit | length}}</h2> 
+    <h2>{{lt | length}}</h2> 
+    <h2>{{lsit | length}}</h2> 
+    <!-- linenumber -->
+    <h2>{{ dict | linenumbers}}</h2> 
+    <h2>{{ var | linenumbers}}</h2> 
+    <!-- lower -->
+    <h2>{{"My Name is Rakib" | lower}}</h2> 
+    <h2>{{ name | lower}}</h2> 
+    <!-- make_list-->
+    <h2>{{tpl | make_list}}</h2> 
+    <!-- random -->
+    <h2>{{lt | random }}</h2> 
+    <!-- slice -->
+    <h2>{{ lt | slice:":2"}}</h2> 
+    <h2>{{ lt | slice:":4"}}</h2> 
+    <h2>{{ lt | slice:"3:6"}}</h2> 
+    <!-- slugify -->
+    <h2>{{'hi i am student' | slugify}}</h2> 
+    <!-- time -->
+    <h2>{{tme | time:"H:i"}}</h2> 
+    <h2>{{tme | time:"H\h i\m"}}</h2> 
+    <!-- title -->
+    <h2>{{ 'my FIRST post'| title}}</h2> 
+    <h2>{{ val| title}}</h2> 
+    <!-- unordered_list -->
+    <h2>{{var | unordered_list}}</h2> 
+    <!-- upper -->
+    <h2>{{lsit | upper}}</h2> 
+    <h2>{{'Jai is a slug' | upper}}</h2> 
+    <!-- wordupper -->
+    <h2>{{value | wordcount}}</h2> 
+    <h2>{{name | wordcount}}</h2> 
+    <h2>{{var | wordcount}}</h2> 
+
+
+
+    
+</body>
+</html>
